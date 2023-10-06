@@ -403,7 +403,7 @@ the USB Device from the Boot Menu in order to boot it.
 fi
 
 #add PXE?
-addPXE=false
+addPXE=true
 if [[  $useUEFI = false && "$hasLAN" = true ]]; then
 	echo -e ""
 	echo_yellow "Add PXE network booting capability?"
