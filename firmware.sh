@@ -262,7 +262,7 @@ able to boot from it after installing the UEFI Full ROM firmware."
 fi
 
 #determine correct file / URL
-firmware_source=${fullrom_source}
+firmware_source=${fullrom_1_source}
 if [[ "$hasUEFIoption" = true || "$hasLegacyOption" = true ]]; then
 	if [ "$useUEFI" = true ]; then
 		eval coreboot_file=$`echo "coreboot_uefi_${device}"`
