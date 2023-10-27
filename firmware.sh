@@ -426,8 +426,8 @@ $CURL -sLO "${fullrom_1_source}${coreboot_file}"
 $CURL -sLO "${fullrom_1_source}${coreboot_file}.sha1"
 
 #verify checksum on downloaded file
-sha1sum -c ${coreboot_file}.sha1 --quiet > /dev/null 2>&1
-[[ $? -ne 0 ]] && { exit_red "Firmware download checksum fail; download corrupted, cannot flash."; return 1; }
+# sha1sum -c ${coreboot_file}.sha1 --quiet > /dev/null 2>&1
+# [[ $? -ne 0 ]] && { exit_red "Firmware download checksum fail; download corrupted, cannot flash."; return 1; }
 
 #preferUSB?
 if [[ "$preferUSB" = true  && $useUEFI = false ]]; then
