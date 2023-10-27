@@ -422,8 +422,8 @@ fi
 #download firmware file
 cd /tmp
 echo_yellow "\nDownloading Full ROM firmware\n(${coreboot_file})"
-$CURL -sLO "${firmware_source}${coreboot_file}"
-$CURL -sLO "${firmware_source}${coreboot_file}.sha1"
+$CURL -sLO "${fullrom_1_source}${coreboot_file}"
+$CURL -sLO "${fullrom_1_source}${coreboot_file}.sha1"
 
 #verify checksum on downloaded file
 sha1sum -c ${coreboot_file}.sha1 --quiet > /dev/null 2>&1
